@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         //Button to get meal suggestions
         clickyBtn.setOnClickListener {
-            val inputText = txeTime.text.toString().trim().lowercase()
+            val userInputText = txeTime.text.toString().trim().lowercase()
 
-            val mealSuggestion = when (inputText) {
+            val mealSuggestion = when (userInputText) {
                 "morning" -> {
                     "Breakfast: Scrambled eggs and toast"
                 }
