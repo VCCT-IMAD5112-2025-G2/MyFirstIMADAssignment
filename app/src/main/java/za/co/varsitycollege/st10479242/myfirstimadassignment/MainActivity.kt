@@ -12,42 +12,48 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        //Finding variables
         val txeTime = findViewById<EditText>(R.id.txeTime)
         val clickyBtn = findViewById<Button>(R.id.clickyBtn)
         val txtFood = findViewById<TextView>(R.id.txtFood)
         val resetBtn = findViewById<Button>(R.id.resetBtn)
 
 
-
+        //Button to get meal suggestions
         clickyBtn.setOnClickListener {
             val inputText = txeTime.text.toString().trim().lowercase()
 
             val mealSuggestion = when (inputText) {
                 "morning" -> {
-                    "Morning: Scrambled eggs and toast"
+                    "Breakfast: Scrambled eggs and toast"
                 }
+
                 "mid-morning" -> {
                     "Mid-Morning Snack: Yogurt with fruits"
                 }
-                "lunch" -> {
+
+                "afternoon" -> {
                     "Lunch: Grilled chicken sandwich"
                 }
+
                 "dinner" -> {
                     "Dinner: Steak and Rice"
                 }
+
                 "midnight snack" -> {
                     "Midnight Snack: Warm Tea and Biscuits"
                 }
+
                 else -> {
                     "Invalid input. Please enter: One of the options above."
                 }
             }
 
             txtFood.text = mealSuggestion
-
+            //Reset Button
             resetBtn.setOnClickListener {
-                txeTime.setText("")
+                txeTime.setText("")   // Clear EditText
+                txtFood.text = ""     // Reset TextView to empty
             }
         }
     }

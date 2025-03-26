@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="330dp"
         android:layout_height="68dp"
-        android:text="Hi Hera,  Please enter: Morning, Mid-Morning, Lunch, Dinner, or Midnight Snack."
+        android:text="Hi Hera,  Please enter: Morning, Mid-Morning, Afternoon, Dinner, or Midnight Snack."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
     <EditText
