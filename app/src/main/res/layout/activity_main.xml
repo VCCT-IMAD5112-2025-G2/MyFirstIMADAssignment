@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="330dp"
+        android:layout_height="68dp"
+        android:text="Hi Hera,  Please enter: Morning, Mid-Morning, Lunch, Dinner, or Midnight Snack."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/txeTime"
+        android:layout_width="379dp"
+        android:layout_height="57dp"
+        android:hint="Enter time of meal."
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/clickyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Get Meal Suggestion" />
+
+    <TextView
+        android:id="@+id/txtFood"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:text="Your meal suggestion"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
+</LinearLayout>
