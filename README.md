@@ -23,7 +23,6 @@ I customized my app to her prefrences.
   4. Then press the green play button in Android Studio
 
 ## Screenshots
-![Screenshot 2025-03-17 231816](https://github.com/user-attachments/assets/6770d924-afc1-4cc5-bce3-cbde0769df46)
 ![Screenshot 2025-04-02 114915](https://github.com/user-attachments/assets/c1c7911e-6ccc-49f9-9492-054de0103ae9)
 ![Screenshot 2025-04-02 162743](https://github.com/user-attachments/assets/a94914a8-82ce-447c-9416-09c7858ce252)
 ![Screenshot 2025-04-02 162700](https://github.com/user-attachments/assets/40777a9d-5b5c-4780-8383-4bc04c751d27)
