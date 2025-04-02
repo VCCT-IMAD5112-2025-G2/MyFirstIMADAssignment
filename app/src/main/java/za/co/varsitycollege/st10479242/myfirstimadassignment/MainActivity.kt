@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,9 +23,12 @@ class MainActivity : AppCompatActivity() {
         clickyBtn.setOnClickListener {
             val userInputText = txeTime.text.toString().trim().lowercase()
 
+            Toast.makeText(this, "Getting meal suggestion...", Toast.LENGTH_SHORT).show()
+
 
             // meal suggestions based on user input
             val mealSuggestion = when (userInputText) {
+
                 "morning" -> {
                     "Breakfast: Scrambled eggs and toast"  // Suggestion for morning meal
                 }
@@ -41,8 +45,9 @@ class MainActivity : AppCompatActivity() {
                     "Midnight Snack: Warm Tea and Biscuits"  // Suggestion for a midnight night snack
                 }
                 else -> {
-                    "Invalid input. Please enter: One of the options above."
-                    // Message for invalid inputs
+                    // Invalid input, display an error toast
+                    Toast.makeText(this, "Invalid input! Please enter a valid time of day.", Toast.LENGTH_LONG).show()
+                    return@setOnClickListener // Prevent further processing if input is invalid
                 }
             }
 
@@ -53,6 +58,8 @@ class MainActivity : AppCompatActivity() {
             resetBtn.setOnClickListener {
                 txeTime.setText("")   // Clears the EditText
                 txtFood.text = ""     // Resets the TextView
+                // Show a toast when the reset button is clicked
+                Toast.makeText(this, "Text cleared.", Toast.LENGTH_SHORT).show()
             }
         }
     }
