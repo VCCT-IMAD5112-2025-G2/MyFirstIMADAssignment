@@ -2,7 +2,7 @@
 # IMAD 5112
 
 ## Meal Suggestion App
-this app makes my good friend Hera's life easier by sparring her the time to decide what to cook based on the meal time.
+This app makes my good friend Hera's life easier by sparring her the time to decide what to cook based on the meal time.
 I customized my app to her prefrences.
 
 
