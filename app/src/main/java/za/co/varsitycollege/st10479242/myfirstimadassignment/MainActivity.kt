@@ -12,48 +12,47 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Finding variables
-        val txeTime = findViewById<EditText>(R.id.txeTime)
-        val clickyBtn = findViewById<Button>(R.id.clickyBtn)
-        val txtFood = findViewById<TextView>(R.id.txtFood)
-        val resetBtn = findViewById<Button>(R.id.resetBtn)
+        // Finding variables
+        val txeTime = findViewById<EditText>(R.id.txeTime)  // EditText where user inputs time of day
+        val clickyBtn = findViewById<Button>(R.id.clickyBtn)  // Button to get meal suggestions
+        val txtFood = findViewById<TextView>(R.id.txtFood)  // TextView to display meal suggestion
+        val resetBtn = findViewById<Button>(R.id.resetBtn)  // Button to reset the input and output fields
 
-
-        //Button to get meal suggestions
+        // Button click event for generating meal suggestions
         clickyBtn.setOnClickListener {
             val userInputText = txeTime.text.toString().trim().lowercase()
 
+
+            // meal suggestions based on user input
             val mealSuggestion = when (userInputText) {
                 "morning" -> {
-                    "Breakfast: Scrambled eggs and toast"
+                    "Breakfast: Scrambled eggs and toast"  // Suggestion for morning meal
                 }
-
                 "mid-morning" -> {
-                    "Mid-Morning Snack: Yogurt with fruits"
+                    "Mid-Morning Snack: Yogurt with fruits"  // Suggestion for mid-morning snack
                 }
-
                 "afternoon" -> {
-                    "Lunch: Grilled chicken sandwich"
+                    "Lunch: Grilled chicken sandwich"  // Suggestion for afternoon lunch
                 }
-
                 "dinner" -> {
-                    "Dinner: Steak and Rice"
+                    "Dinner: Steak and Rice"  // Suggestion for dinner
                 }
-
                 "midnight snack" -> {
-                    "Midnight Snack: Warm Tea and Biscuits"
+                    "Midnight Snack: Warm Tea and Biscuits"  // Suggestion for a midnight night snack
                 }
-
                 else -> {
                     "Invalid input. Please enter: One of the options above."
+                    // Message for invalid inputs
                 }
             }
 
+            // Display the meal suggestion
             txtFood.text = mealSuggestion
-            //Reset Button
+
+            // Reset Button click event to clear input and output
             resetBtn.setOnClickListener {
-                txeTime.setText("")   // Clear EditText
-                txtFood.text = ""     // Reset TextView to empty
+                txeTime.setText("")   // Clears the EditText
+                txtFood.text = ""     // Resets the TextView
             }
         }
     }
