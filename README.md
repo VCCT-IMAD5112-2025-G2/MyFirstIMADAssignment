@@ -31,6 +31,3 @@ I customized my app to her prefrences.
 ![Screenshot 2025-04-02 162626](https://github.com/user-attachments/assets/bafac009-ee2c-4470-9d00-642de1b49da2)
 ![Screenshot 2025-04-02 162700](https://github.com/user-attachments/assets/40777a9d-5b5c-4780-8383-4bc04c751d27)
 ![Screenshot 2025-04-02 162743](https://github.com/user-attachments/assets/a94914a8-82ce-447c-9416-09c7858ce252)
-
-![Screenshot 2025-04-20 002616](https://github.com/user-attachments/assets/10dfabaf-9116-4547-b972-48da5c2e56a2)
-
