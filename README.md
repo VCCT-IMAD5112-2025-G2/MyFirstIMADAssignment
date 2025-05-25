@@ -3,7 +3,7 @@
 
 # Flashcard Quiz App
 
-An Android flashcard-style quiz application built with Kotlin. The app tests users on general history questions and provides instant feedback with score tracking.
+A flashcard-style quiz. The app tests users on general history questions and provides instant feedback with score tracking.
 
 ## 📱 Features
 
@@ -13,7 +13,6 @@ An Android flashcard-style quiz application built with Kotlin. The app tests use
 - Simple and intuitive interface
 
 ## 🛠 Built With
-
 - Kotlin
 - Android Studio
 - Android Jetpack Libraries
