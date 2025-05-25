@@ -21,7 +21,7 @@ A flashcard-style quiz. The app tests users on general history questions and pro
   - Immediate response to each question (Correct/Incorrect).
   - Score is tracked in the background.
   - Final feedback and motivation message after the quiz.
-  - 
+    
 ## 🛠 Built With
 - Kotlin
 - Android Studio
